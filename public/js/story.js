@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     const story = await apiRequest(`/api/public/stories/${encodeURIComponent(slug)}`);
     renderStory(story);
-    lucide.createIcons();
   } catch (error) {
     console.error('Failed to load story:', error);
     document.getElementById('story-content').innerHTML = '<div class="empty-state"><h3>Story not found</h3><p>The story you are looking for does not exist or has been unpublished.</p></div>';

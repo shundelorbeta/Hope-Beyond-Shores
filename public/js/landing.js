@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadFeaturedStory();
   await loadLatestStories();
   await loadAboutSection();
-  lucide.createIcons();
 });
 
 async function loadHero() {
@@ -15,8 +14,9 @@ async function loadHero() {
     document.getElementById('hero-cta').href = '/stories.html';
 
     const heroImage = document.getElementById('hero-image');
-    if (settings.hero_image_url) {
-      heroImage.innerHTML = `<img src="${settings.hero_image_url}" alt="Hero image">`;
+    if (heroImage) {
+      const imageUrl = settings.hero_image_url || '/images/hero-bg.png';
+      heroImage.innerHTML = `<img src="${imageUrl}" alt="Hero image" style="width:100%;height:100%;object-fit:cover;">`;
     }
   } catch (error) {
     console.error('Failed to load hero:', error);
@@ -97,7 +97,6 @@ async function loadAboutSection() {
     const writerImage = document.getElementById('writer-image');
 
     container.innerHTML = `
-      <h3 class="section-title">${settings.about_title || 'About'}</h3>
       <p>${settings.about_content || ''}</p>
       <p><strong>${settings.writer_name || ''}</strong></p>
       <p>${settings.writer_bio || ''}</p>

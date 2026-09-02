@@ -126,6 +126,36 @@ a:hover {
   background: var(--soft-white);
   border-bottom: 1px solid var(--sand);
   padding: 80px 0;
+  overflow: hidden;
+}
+
+.hero--bg {
+  background: var(--deep-brown);
+  color: var(--soft-white);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.hero--bg .hero-content h1,
+.hero--bg .hero-content p {
+  color: var(--soft-white);
+}
+
+.hero--bg .btn-primary {
+  background: var(--soft-white);
+  color: var(--deep-brown);
+}
+
+.hero--bg .btn-primary:hover {
+  background: var(--sand);
+  color: var(--deep-brown);
 }
 
 .hero-inner {
@@ -335,11 +365,22 @@ a:hover {
   margin-bottom: 16px;
 }
 
-.about-image img {
+.about-image {
+  background: var(--soft-white);
   border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  border-radius: 8px;
   width: 100%;
-  height: 360px;
+  height: 480px;
   object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 /* Contact Form */

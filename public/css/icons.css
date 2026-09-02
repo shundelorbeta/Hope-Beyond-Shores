@@ -1,0 +1,32 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav-menu-btn .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar-link .icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.stat-icon .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.action-card .icon {
+  width: 20px;
+  height: 20px;
+}

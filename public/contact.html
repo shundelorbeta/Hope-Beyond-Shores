@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Hope Beyond Shores</title>
   <meta name="description" content="Get in touch with Hope Beyond Shores.">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="stylesheet" href="/css/styles.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/css/icons.css">
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;" aria-hidden="true">
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  </svg>
   <nav class="nav">
     <div class="nav-inner">
       <a href="/" class="nav-logo">Hope Beyond Shores</a>
@@ -19,7 +23,7 @@
         <li><a href="/login.html">Owner Login</a></li>
       </ul>
       <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu">
-        <i data-lucide="menu"></i>
+        <svg class="icon"><use href="#i-menu"/></svg>
       </button>
     </div>
     <div class="nav-mobile" id="nav-mobile">

@@ -103,7 +103,7 @@ VALUES (
   'Read Our Stories',
   'About Hope Beyond Shores',
   'Hope Beyond Shores is a digital journal documenting island life, local communities, faith, hope, and meaningful experiences around Bantayan Island and nearby communities.',
-  'Writer Name',
+  'Janice Almohallas',
   'A storyteller capturing the spirit of island life and the communities that make it special.'
 )
 ON CONFLICT DO NOTHING;

@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  lucide.createIcons();
-
   const token = getAuthToken();
   if (!token) {
     window.location.href = '/login.html';

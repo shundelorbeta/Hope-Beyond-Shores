@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories - Hope Beyond Shores</title>
+  <meta name="description" content="Browse all published island stories from Hope Beyond Shores.">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Hope Beyond Shores</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/stories.html">Stories</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/login.html">Owner Login</a></li>
+      </ul>
+      <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="/">Home</a>
+      <a href="/stories.html">Stories</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/login.html">Owner Login</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Stories</h1>
+      <p class="section-subtitle">Browse our collection of island stories</p>
+
+      <div class="form-group" style="max-width: 400px; margin-bottom: 32px;">
+        <input type="text" id="search-input" placeholder="Search stories by title or keyword...">
+      </div>
+
+      <div class="story-grid" id="stories-grid">
+        <div class="loading"><div class="spinner"></div></div>
+      </div>
+
+      <div class="text-center mt-32">
+        <button class="btn btn-secondary" id="load-more" style="display: none;">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>Hope Beyond Shores</h3>
+        <p>Island stories of faith, community, and life beyond the shore.</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul class="footer-links">
+          <li><a href="/stories.html">Stories</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/login.html">Owner Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> Hope Beyond Shores. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/stories.js"></script>
+</body>
+</html>

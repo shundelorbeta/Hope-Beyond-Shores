@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Hope Beyond Shores</title>
+  <meta name="description" content="Get in touch with Hope Beyond Shores.">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Hope Beyond Shores</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/stories.html">Stories</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/login.html">Owner Login</a></li>
+      </ul>
+      <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="/">Home</a>
+      <a href="/stories.html">Stories</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/login.html">Owner Login</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title text-center">Contact Us</h1>
+      <p class="section-subtitle text-center">We would love to hear from you</p>
+
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="visitor-name">Name (optional)</label>
+            <input type="text" id="visitor-name" name="visitor_name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="visitor-email">Email (optional)</label>
+            <input type="email" id="visitor-email" name="visitor_email" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message-content">Message</label>
+            <textarea id="message-content" name="message_content" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="contact-status" style="margin-top: 16px;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>Hope Beyond Shores</h3>
+        <p>Island stories of faith, community, and life beyond the shore.</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul class="footer-links">
+          <li><a href="/stories.html">Stories</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/login.html">Owner Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> Hope Beyond Shores. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/contact.js"></script>
+</body>
+</html>

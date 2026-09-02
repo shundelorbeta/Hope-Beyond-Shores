@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories - Dashboard</title>
+  <link rel="stylesheet" href="/dashboard/dashboard.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>HBS</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="/dashboard/" class="sidebar-link">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="/dashboard/stories.html" class="sidebar-link active">
+          <i data-lucide="book-open"></i>
+          <span>Stories</span>
+        </a>
+        <a href="/dashboard/landing.html" class="sidebar-link">
+          <i data-lucide="home"></i>
+          <span>Landing Page</span>
+        </a>
+        <a href="/dashboard/messages.html" class="sidebar-link">
+          <i data-lucide="mail"></i>
+          <span>Messages</span>
+        </a>
+        <a href="/dashboard/media.html" class="sidebar-link">
+          <i data-lucide="image"></i>
+          <span>Media</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="/" class="sidebar-link">
+          <i data-lucide="external-link"></i>
+          <span>View Site</span>
+        </a>
+        <button id="logout-btn" class="sidebar-link" style="background: none; border: none; cursor: pointer; width: 100%; text-align: left;">
+          <i data-lucide="log-out"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="dashboard-header">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h1>Stories</h1>
+          <a href="/dashboard/editor.html" class="btn btn-primary">New Story</a>
+        </div>
+      </header>
+
+      <div class="dashboard-section">
+        <div id="stories-list">
+          <div class="loading"><div class="spinner"></div></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/main.js"></script>
+  <script src="/dashboard/stories.js"></script>
+</body>
+</html>

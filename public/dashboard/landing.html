@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Dashboard</title>
+  <link rel="stylesheet" href="/dashboard/dashboard.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>HBS</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="/dashboard/" class="sidebar-link">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="/dashboard/stories.html" class="sidebar-link">
+          <i data-lucide="book-open"></i>
+          <span>Stories</span>
+        </a>
+        <a href="/dashboard/landing.html" class="sidebar-link active">
+          <i data-lucide="home"></i>
+          <span>Landing Page</span>
+        </a>
+        <a href="/dashboard/messages.html" class="sidebar-link">
+          <i data-lucide="mail"></i>
+          <span>Messages</span>
+        </a>
+        <a href="/dashboard/media.html" class="sidebar-link">
+          <i data-lucide="image"></i>
+          <span>Media</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="/" class="sidebar-link">
+          <i data-lucide="external-link"></i>
+          <span>View Site</span>
+        </a>
+        <button id="logout-btn" class="sidebar-link" style="background: none; border: none; cursor: pointer; width: 100%; text-align: left;">
+          <i data-lucide="log-out"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1>Landing Page Settings</h1>
+      </header>
+
+      <div class="dashboard-section">
+        <form id="settings-form">
+          <div class="form-group">
+            <label for="hero_title">Hero Title</label>
+            <input type="text" id="hero_title" name="hero_title" required>
+          </div>
+          <div class="form-group">
+            <label for="hero_subtitle">Hero Subtitle</label>
+            <textarea id="hero_subtitle" name="hero_subtitle" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="hero_cta_text">Hero CTA Text</label>
+            <input type="text" id="hero_cta_text" name="hero_cta_text" required>
+          </div>
+          <div class="form-group">
+            <label for="hero_image_url">Hero Image URL</label>
+            <input type="text" id="hero_image_url" name="hero_image_url">
+          </div>
+          <div class="form-group">
+            <label for="about_title">About Title</label>
+            <input type="text" id="about_title" name="about_title" required>
+          </div>
+          <div class="form-group">
+            <label for="about_content">About Content</label>
+            <textarea id="about_content" name="about_content" rows="6" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="writer_name">Writer Name</label>
+            <input type="text" id="writer_name" name="writer_name" required>
+          </div>
+          <div class="form-group">
+            <label for="writer_bio">Writer Bio</label>
+            <textarea id="writer_bio" name="writer_bio" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="facebook_url">Facebook URL</label>
+            <input type="text" id="facebook_url" name="facebook_url">
+          </div>
+          <div class="form-group">
+            <label for="contact_email">Contact Email</label>
+            <input type="email" id="contact_email" name="contact_email">
+          </div>
+          <div class="form-group">
+            <label for="contact_phone">Contact Phone</label>
+            <input type="text" id="contact_phone" name="contact_phone">
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save Settings</button>
+          </div>
+          <div id="settings-status" style="margin-top: 16px;"></div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="/js/main.js"></script>
+  <script src="/dashboard/landing.js"></script>
+</body>
+</html>

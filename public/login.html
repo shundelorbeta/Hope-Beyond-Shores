@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Login - Hope Beyond Shores</title>
+  <meta name="description" content="Secure owner login for Hope Beyond Shores dashboard.">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Hope Beyond Shores</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/stories.html">Stories</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/login.html">Owner Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 400px; margin: 0 auto;">
+        <h1 class="section-title text-center">Owner Login</h1>
+        <p class="section-subtitle text-center">Sign in to manage your content</p>
+
+        <form id="login-form" style="background: var(--soft-white); padding: 32px; border-radius: 12px; border: 1px solid var(--sand);">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Sign In</button>
+          <div id="login-status" style="margin-top: 16px; text-align: center;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h3>Hope Beyond Shores</h3>
+        <p>Island stories of faith, community, and life beyond the shore.</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul class="footer-links">
+          <li><a href="/stories.html">Stories</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/login.html">Owner Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> Hope Beyond Shores. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>
